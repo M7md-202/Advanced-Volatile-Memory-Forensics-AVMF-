@@ -5,9 +5,17 @@ A Streamlit-based dashboard for volatile memory forensics analysis and incident 
 ## Features
 - Upload / manage memory analysis outputs (CSV artifacts)
 - Visual dashboard views (processes, network, persistence, etc.)
-- Generates reports (Word export)
 - Designed for demonstrating multiple attack scenarios (e.g., data exfil, credential theft, ransomware)
-- Designed for integrating incident response playbooks
+- Timeline reconstruction
+- Network connections reconstruction
+- Yara rules repository
+- Dashboard which supports forensic results integration
+- Automatic Forensic Reporting
+- IR Playbook integration
+- Secure RBAC Function
+
+<img width="1207" height="609" alt="image" src="https://github.com/user-attachments/assets/d4452b3d-7dad-445d-a272-92c761d88493" />
+
 
 ## Tech Stack
 - Python
@@ -254,6 +262,22 @@ Edit/remove users (select user, update role/permissions)
 
 <img width="1492" height="288" alt="image" src="https://github.com/user-attachments/assets/9d6cc971-1538-44ae-8139-15a3633d86ac" />
 
+
+### 10) Manage YARA Rules (Per Scenario)
+
+Go to **YARA Rules**:
+1. Confirm the correct **Memory image** is selected (shown at the top).
+2. Use **Select a rule** to choose an existing YARA rule to view/edit.
+3. (Optional) Expand **Preamble (imports / globals / comments)** if your rules use shared imports or globals.
+4. Edit the **Rule text** in the editor.
+5. Click **Save rule** to persist changes.
+6. Use **Download .yar** to export the combined YARA rules file for the selected scenario.
+7. (Optional) Use **Delete rule** to remove a rule.
+
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/1ec0363b-0dec-4841-84fe-67e25841ff74" />
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/d8e24f91-6426-4b17-aa73-246e9d2bd886" />
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/0811cc39-25de-41fe-abdc-92944ff7b163" />
+<img width="1874" height="952" alt="image" src="https://github.com/user-attachments/assets/5163b84e-3abb-4a18-b1a3-d48de393c176" />
 
 
 
