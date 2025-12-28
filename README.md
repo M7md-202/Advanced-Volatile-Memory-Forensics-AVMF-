@@ -223,6 +223,38 @@ git push
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/b1627661-5721-448b-87c2-9e79911710bc" />
 
 
+### 8) Download the Incident Response (IR) Playbook (DOCX)
+
+Go to **IR Playbook**:
+1. Select the **scenario/image**
+2. Click **Download Active Playbook (.docx)**
+
+If you see: **“python-docx is not installed. Install it to render playbooks.”**  
+Install it:
+```powershell
+pip install python-docx
+```
+
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/76113f16-afb4-491d-873d-e17650764f41" />
+
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/8d1a7a3c-65a8-4883-9952-fb8d013146d1" />
+
+### 9) User Management (RBAC) (Admin only)
+
+Admins can manage users and permissions.
+Go to Settings → User Management (RBAC) :
+
+View the RBAC table (users + permissions)
+
+Add users (username + password + role)
+
+Edit/remove users (select user, update role/permissions)
+
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/717c7c95-6035-4b56-a3a0-16d9b60b9449" />
+
+<img width="1492" height="288" alt="image" src="https://github.com/user-attachments/assets/9d6cc971-1538-44ae-8139-15a3633d86ac" />
+
+
 
 
 
