@@ -220,6 +220,10 @@ Install it:
 pip install python-docx
 git push
 ```
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/b1627661-5721-448b-87c2-9e79911710bc" />
+
+
+
 
 
 
