@@ -3,6 +3,7 @@
 A Streamlit-based dashboard for volatile memory forensics analysis and incident response reporting.
 
 ## Features
+- Memory acquisition and analysis pipeline
 - Upload / manage memory analysis outputs (CSV artifacts)
 - Visual dashboard views (processes, network, persistence, etc.)
 - Designed for demonstrating multiple attack scenarios (e.g., data exfil, credential theft, ransomware)
@@ -131,7 +132,49 @@ This section explains how to use the AVMF dashboard step-by-step.
 
 ---
 
-### 1) Log in
+### 0) Memory Acquisition (Magnet RAM Capture)
+
+This step is done on the target Windows machine **before** analysis.  
+Use **Magnet RAM Capture** to acquire a full memory image (`.raw`) for the scenario.
+
+**Steps:**
+1. Run **Magnet RAM Capture** as Administrator.
+2. Set the output path and filename (example: `Data_Exfil.raw`).
+3. Choose **Segment size** (recommended: **Don’t Split** for simple lab demos).
+4. Click **Start** and wait until capture completes (100%).
+
+
+<img width="624" height="485" alt="image" src="https://github.com/user-attachments/assets/31abd1b8-401c-437e-8f21-9c7be37896b5" />
+
+<img width="637" height="440" alt="image" src="https://github.com/user-attachments/assets/ba5a3dc7-c6ca-4b67-bde7-d6fcceee7f08" />
+
+
+---
+
+### 1) Transfer the Memory Image to the Analysis Machine (SCP)
+
+After acquisition, transfer the `.raw` file to your analysis VM (example: Kali).
+
+**Example (from Kali):**
+```bash
+scp Administrator@<WINDOWS_IP>:"C:/Users/administrator/Desktop/Data_Exfil.raw" ~/Downloads/
+```
+<img width="649" height="121" alt="image" src="https://github.com/user-attachments/assets/d792127f-2e7f-4271-9e84-e265fe357b08" />
+
+### 2) Create CSVs for the Dashboard (Volatility 3)
+
+After acquiring the memory image and completing analysis, export key artifacts to **CSV** so the AVMF dashboard can ingest them in **Data Upload**.
+
+**Example commands (Volatility 3):**
+```bash
+# Example (Windows memory image on Kali)
+python3 /home/kali/volatility3/vol.py -f $MEM -r csv windows.pslist.PsList   > /home/kali/Downloads/cred_pslist.csv
+python3 /home/kali/volatility3/vol.py -f $MEM -r csv windows.pstree.PsTree   > /home/kali/Downloads/cred_pstree.csv
+python3 /home/kali/volatility3/vol.py -f $MEM -r csv windows.cmdline.CmdLine > /home/kali/Downloads/cred_cmdline.csv
+```
+---
+
+### 3) Log in
 Open the AVMF web app and log in using your assigned username and password use either Admin or an Employee account (Permissions will differ). 
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/e74a33f1-9602-48dc-b3fb-49630e609aa4" />
 
@@ -139,7 +182,7 @@ Open the AVMF web app and log in using your assigned username and password use e
 
 ---
 
-### 2) Add a new scenario/image (memory case)
+### 4) Add a new scenario/image (memory case)
 A “Scenario/Image” represents one investigation (example: `data_exfil.raw`).  
 Go to **Settings → Add new scenario/image** and fill:
 - **Memory dump filename/label (unique)** (example: `data_exfil.raw`)
@@ -155,7 +198,7 @@ Click **Add scenario**.
 
 ---
 
-### 3) Edit or delete an existing scenario/image
+### 5) Edit or delete an existing scenario/image
 Go to **Settings → Edit/delete existing scenario/image**:
 - Select the scenario/image from the dropdown
 - Update the metadata (rename label, OS, acquired time, pipeline)
@@ -175,7 +218,7 @@ To delete:
 
 ---
 
-### 4) Configure dashboard tabs for the selected scenario
+### 6) Configure dashboard tabs for the selected scenario
 Each scenario can enable/disable which tabs appear in the dashboard.  
 Go to **Settings → Dashboard Tabs for This Scenario**:
 - Toggle tabs (Processes, Network, YARA Hits, Run Keys, RunOnce, Command Line, Sessions, Logon Events)
@@ -186,7 +229,7 @@ Go to **Settings → Dashboard Tabs for This Scenario**:
 
 ---
 
-### 5) Upload forensic artifacts (CSV files) for the scenario
+### 7) Upload forensic artifacts (CSV files) for the scenario
 Go to **Data Upload**.  
 This page is where you upload per-scenario CSV outputs (ex: Volatility exports).  
 For each table type (Processes, Network Connections, etc.):
@@ -202,7 +245,7 @@ For each table type (Processes, Network Connections, etc.):
 
 ---
 
-### 6) Review findings in the Dashboard
+### 8) Review findings in the Dashboard
 Go to **Dashboard**.  
 You’ll see an overview of the selected scenario:
 - Image name, scenario name, OS, acquired time
@@ -215,7 +258,7 @@ Use filters where available (PID filter / process name filter) to focus on suspi
 
 ---
 
-### 7) Generate a forensic report (TXT + optional Word)
+### 9) Generate a forensic report (TXT + optional Word)
 Go to **Reports**:
 - Review the report preview
 - Click **Download as text (.txt)**
@@ -230,7 +273,7 @@ git push
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/b1627661-5721-448b-87c2-9e79911710bc" />
 
 
-### 8) Download the Incident Response (IR) Playbook (DOCX)
+### 10) Download the Incident Response (IR) Playbook (DOCX)
 
 Go to **IR Playbook**:
 1. Select the **scenario/image**
@@ -246,7 +289,7 @@ pip install python-docx
 
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/8d1a7a3c-65a8-4883-9952-fb8d013146d1" />
 
-### 9) User Management (RBAC) (Admin only)
+### 11) User Management (RBAC) (Admin only)
 
 Admins can manage users and permissions.
 Go to Settings → User Management (RBAC) :
@@ -262,7 +305,7 @@ Edit/remove users (select user, update role/permissions)
 <img width="1492" height="288" alt="image" src="https://github.com/user-attachments/assets/9d6cc971-1538-44ae-8139-15a3633d86ac" />
 
 
-### 10) Manage YARA Rules (Per Scenario)
+### 12) Manage YARA Rules (Per Scenario)
 
 Go to **YARA Rules**:
 1. Confirm the correct **Memory image** is selected (shown at the top).
@@ -277,6 +320,7 @@ Go to **YARA Rules**:
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/d8e24f91-6426-4b17-aa73-246e9d2bd886" />
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/0811cc39-25de-41fe-abdc-92944ff7b163" />
 <img width="1874" height="952" alt="image" src="https://github.com/user-attachments/assets/5163b84e-3abb-4a18-b1a3-d48de393c176" />
+
 
 
 
