@@ -130,10 +130,6 @@ Open the AVMF web app and log in using your assigned username and password use e
 
 (Optional) Enable **“Keep me logged in”** for demos/testing.
 
-📸 **Screenshot to take:**  
-**Login page** showing the AVMF header + Username/Password fields + “Keep me logged in” + Log in button.  
-**Save as:** `docs/images/01_login.png`
-
 ---
 
 ### 2) Add a new scenario/image (memory case)
@@ -147,9 +143,8 @@ Go to **Settings → Add new scenario/image** and fill:
 
 Click **Add scenario**.
 
-📸 **Screenshot to take:**  
-**Settings page** showing the “Add new scenario/image” section with the form fields + the **Add scenario** button.  
-**Save as:** `docs/images/02_add_scenario.png`
+<img width="1532" height="377" alt="image" src="https://github.com/user-attachments/assets/7a775f1b-11f3-446f-8f78-5d566fdf296f" />
+
 
 ---
 
@@ -165,12 +160,11 @@ To delete:
 - (Optional) enable “Also delete this image’s CSVs + YARA hits + scenario playbook”
 - Click **Delete scenario**
 
-📸 **Screenshot to take:**  
-**Settings page** showing:
-- the scenario dropdown (selected scenario visible)
-- scenario metadata fields
-- Save scenario changes + Delete scenario section/buttons  
-**Save as:** `docs/images/03_edit_delete_scenario.png`
+  <img width="1508" height="519" alt="image" src="https://github.com/user-attachments/assets/bf538c73-6efb-4c42-962d-46cd13df559a" />
+
+
+<img width="1557" height="513" alt="image" src="https://github.com/user-attachments/assets/b4eb2a10-a1b4-4dfc-8cae-33eddb519ad8" />
+
 
 ---
 
@@ -181,9 +175,7 @@ Go to **Settings → Dashboard Tabs for This Scenario**:
 - (Optional) enable **Auto-hide empty tables/tabs**
 - Click **Save scenario changes**
 
-📸 **Screenshot to take:**  
-**Settings page** showing the “Dashboard Tabs for This Scenario” section with checkboxes and Save scenario changes button.  
-**Save as:** `docs/images/04_tabs_config.png`
+<img width="1507" height="564" alt="image" src="https://github.com/user-attachments/assets/edde517e-4980-4d8d-97d5-f10985d45376" />
 
 ---
 
@@ -196,12 +188,10 @@ For each table type (Processes, Network Connections, etc.):
 3. Confirm the page shows a message like **“Using uploaded CSV at: …”**
 4. The preview table should populate (first rows)
 
-📸 **Screenshot to take:**  
-**Data Upload page** showing:
-- “Current memory image: …”
-- At least one upload section (Processes) with “Using uploaded CSV …”
-- A preview table of rows  
-**Save as:** `docs/images/05_data_upload.png`
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/159d0e35-adec-41a4-8476-c22dba966c30" />
+
+<img width="1919" height="1040" alt="image" src="https://github.com/user-attachments/assets/2f4d38ac-ed8b-493d-99a8-dd963b2be988" />
+
 
 ---
 
@@ -214,11 +204,7 @@ You’ll see an overview of the selected scenario:
 
 Use filters where available (PID filter / process name filter) to focus on suspicious activity.
 
-📸 **Screenshot to take:**  
-**Dashboard page** showing:
-- the top overview cards + counters
-- at least one populated table (Processes and/or Network Connections)  
-**Save as:** `docs/images/06_dashboard.png`
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/f4974147-710a-4600-86c8-77af29e2edd7" />
 
 ---
 
@@ -234,5 +220,6 @@ Install it:
 pip install python-docx
 git push
 ```
+
 
 
