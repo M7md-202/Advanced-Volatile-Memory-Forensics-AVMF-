@@ -111,6 +111,128 @@ powershell
 Copy the code
 git add requirements.txt
 git commit -m "Add requirements"
+```
+
+
+## Documentation
+
+---
+
+## User Manual (Quick Guide)
+
+This section explains how to use the AVMF dashboard step-by-step.  
+
+---
+
+### 1) Log in
+Open the AVMF web app and log in using your assigned username and password use either Admin or an Employee account (Permissions will differ). 
+<img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/e74a33f1-9602-48dc-b3fb-49630e609aa4" />
+
+(Optional) Enable **“Keep me logged in”** for demos/testing.
+
+📸 **Screenshot to take:**  
+**Login page** showing the AVMF header + Username/Password fields + “Keep me logged in” + Log in button.  
+**Save as:** `docs/images/01_login.png`
+
+---
+
+### 2) Add a new scenario/image (memory case)
+A “Scenario/Image” represents one investigation (example: `data_exfil.raw`).  
+Go to **Settings → Add new scenario/image** and fill:
+- **Memory dump filename/label (unique)** (example: `data_exfil.raw`)
+- **Scenario name** (example: `HTTP Data Exfiltration`)
+- **Operating OS** (example: `Windows 11`)
+- **Acquired At** (date/time)
+- **Pipeline** (example: `generic`)
+
+Click **Add scenario**.
+
+📸 **Screenshot to take:**  
+**Settings page** showing the “Add new scenario/image” section with the form fields + the **Add scenario** button.  
+**Save as:** `docs/images/02_add_scenario.png`
+
+---
+
+### 3) Edit or delete an existing scenario/image
+Go to **Settings → Edit/delete existing scenario/image**:
+- Select the scenario/image from the dropdown
+- Update the metadata (rename label, OS, acquired time, pipeline)
+- (Optional) Enable the checkbox to rename legacy scenario files (if your build supports it)
+- Click **Save scenario changes**
+
+To delete:
+- Select scenario
+- (Optional) enable “Also delete this image’s CSVs + YARA hits + scenario playbook”
+- Click **Delete scenario**
+
+📸 **Screenshot to take:**  
+**Settings page** showing:
+- the scenario dropdown (selected scenario visible)
+- scenario metadata fields
+- Save scenario changes + Delete scenario section/buttons  
+**Save as:** `docs/images/03_edit_delete_scenario.png`
+
+---
+
+### 4) Configure dashboard tabs for the selected scenario
+Each scenario can enable/disable which tabs appear in the dashboard.  
+Go to **Settings → Dashboard Tabs for This Scenario**:
+- Toggle tabs (Processes, Network, YARA Hits, Run Keys, RunOnce, Command Line, Sessions, Logon Events)
+- (Optional) enable **Auto-hide empty tables/tabs**
+- Click **Save scenario changes**
+
+📸 **Screenshot to take:**  
+**Settings page** showing the “Dashboard Tabs for This Scenario” section with checkboxes and Save scenario changes button.  
+**Save as:** `docs/images/04_tabs_config.png`
+
+---
+
+### 5) Upload forensic artifacts (CSV files) for the scenario
+Go to **Data Upload**.  
+This page is where you upload per-scenario CSV outputs (ex: Volatility exports).  
+For each table type (Processes, Network Connections, etc.):
+1. Confirm the **current memory image** at the top is correct
+2. Upload the matching CSV for that section
+3. Confirm the page shows a message like **“Using uploaded CSV at: …”**
+4. The preview table should populate (first rows)
+
+📸 **Screenshot to take:**  
+**Data Upload page** showing:
+- “Current memory image: …”
+- At least one upload section (Processes) with “Using uploaded CSV …”
+- A preview table of rows  
+**Save as:** `docs/images/05_data_upload.png`
+
+---
+
+### 6) Review findings in the Dashboard
+Go to **Dashboard**.  
+You’ll see an overview of the selected scenario:
+- Image name, scenario name, OS, acquired time
+- Counters (Processes, Network Connections, YARA hits, persistence, etc.)
+- Tabs with data tables
+
+Use filters where available (PID filter / process name filter) to focus on suspicious activity.
+
+📸 **Screenshot to take:**  
+**Dashboard page** showing:
+- the top overview cards + counters
+- at least one populated table (Processes and/or Network Connections)  
+**Save as:** `docs/images/06_dashboard.png`
+
+---
+
+### 7) Generate a forensic report (TXT + optional Word)
+Go to **Reports**:
+- Review the report preview
+- Click **Download as text (.txt)**
+- For Word export, ensure `python-docx` is installed
+
+If you see: **“Install python-docx to enable Word export.”**  
+Install it:
+```powershell
+pip install python-docx
 git push
 ```
+
 
