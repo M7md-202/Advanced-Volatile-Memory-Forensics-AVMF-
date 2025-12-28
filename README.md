@@ -27,9 +27,11 @@ A Streamlit-based dashboard for volatile memory forensics analysis and incident 
 ├─ forensics_dashboard.py        # Streamlit entry point
 ├─ requirements.txt              # Python dependencies (recommended)
 ├─ README.md
-├─ data/                         # Input CSV artifacts (optional)
+├─ data/                         # Input CSV artifacts 
 ├─ outputs/                      # Generated reports (optional)
 └─ ...
+```
+
 Run Locally (Windows/PowerShell)
 1) Clone the repo
 powershell
@@ -85,3 +87,4 @@ Copy the code
 git add requirements.txt
 git commit -m "Add requirements"
 git push
+
