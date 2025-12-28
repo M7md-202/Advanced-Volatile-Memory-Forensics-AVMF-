@@ -14,7 +14,6 @@ A Streamlit-based dashboard for volatile memory forensics analysis and incident 
 - IR Playbook integration
 - Secure RBAC Function
 
-<img width="1207" height="609" alt="image" src="https://github.com/user-attachments/assets/d4452b3d-7dad-445d-a272-92c761d88493" />
 
 
 ## Tech Stack
@@ -278,6 +277,7 @@ Go to **YARA Rules**:
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/d8e24f91-6426-4b17-aa73-246e9d2bd886" />
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/0811cc39-25de-41fe-abdc-92944ff7b163" />
 <img width="1874" height="952" alt="image" src="https://github.com/user-attachments/assets/5163b84e-3abb-4a18-b1a3-d48de393c176" />
+
 
 
 
