@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "id": 1,
+      "name": "data_exfil.raw",
+      "scenario": "HTTP Data Exfiltration",
+      "os": "Windows 11",
+      "acquired_at": "2025-12-25 14:32",
+      "pipeline": "generic",
+      "tabs": {
+        "processes": true,
+        "network": true,
+        "yara": true,
+        "runkeys": true,
+        "runonce": true,
+        "cmdline": true,
+        "sessions": true,
+        "logons": false
+      },
+      "hide_empty": false,
+      "storage_key": "mem_beacon_raw",
+      "playbook_file": "mem_beacon_raw__IR_Playbook_Data_Exfil_docx",
+      "aliases": []
+    },
+    {
+      "id": 2,
+      "name": "Ransomware.raw",
+      "scenario": "Ransomware (Locky)",
+      "os": "Windows 11",
+      "acquired_at": "2025-11-10 14:32",
+      "pipeline": "generic",
+      "tabs": {
+        "processes": true,
+        "network": true,
+        "yara": true,
+        "runkeys": true,
+        "runonce": true,
+        "cmdline": false,
+        "sessions": false,
+        "logons": false
+      },
+      "hide_empty": true,
+      "storage_key": "mem_fileless_raw",
+      "playbook_file": "mem_fileless_raw__Locky_Ransomware_IR_Playbook_SANS_PICERL_3_docx",
+      "aliases": []
+    },
+    {
+      "id": 3,
+      "name": "mem_creds.raw",
+      "scenario": "Credential Activity",
+      "os": "Windows 11",
+      "acquired_at": "2025-12-26 15:40",
+      "pipeline": "generic",
+      "tabs": {
+        "processes": true,
+        "network": false,
+        "yara": true,
+        "runkeys": true,
+        "runonce": false,
+        "cmdline": true,
+        "sessions": true,
+        "logons": false
+      },
+      "hide_empty": false,
+      "storage_key": "mem_creds_raw",
+      "playbook_file": "mem_creds_raw__IR_Playbook_Credential_Theft_docx",
+      "aliases": []
+    }
+  ]
+}

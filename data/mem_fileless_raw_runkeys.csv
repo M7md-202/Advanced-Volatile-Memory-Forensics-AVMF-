@@ -1,0 +1,12 @@
+Source,Info
+run_keys,"Key=[NONAME]\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\REGISTRY\\MACHINE\\SYSTEM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\REGISTRY\\MACHINE\\HARDWARE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\Device\\HarddiskVolume1\\Boot\\BCD\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\SystemRoot\\System32\\Config\\SOFTWARE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\SystemRoot\\System32\\Config\\SECURITY\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\SystemRoot\\System32\\Config\\SAM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\??\\C:\\Windows\\ServiceProfiles\\LocalService\\NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=Sidebar, Data=%ProgramFiles%\\Windows Sidebar\\Sidebar.exe /autoRun"
+run_keys,"Key=\\??\\C:\\Windows\\ServiceProfiles\\NetworkService\\NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=Sidebar, Data=%ProgramFiles%\\Windows Sidebar\\Sidebar.exe /autoRun"
+run_keys,"Key=\\??\\C:\\Users\\INFERNO\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"
+run_keys,"Key=\\??\\C:\\System Volume Information\\Syscache.hve\\Software\\Microsoft\\Windows\\CurrentVersion\\Run, Name=-, Data=-"

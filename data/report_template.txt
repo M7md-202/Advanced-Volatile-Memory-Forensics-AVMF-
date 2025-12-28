@@ -1,0 +1,48 @@
+AVMF FORENSIC REPORT
+
+
+Memory Image : {image_name}
+Scenario     : {scenario}
+Operating OS : {os}
+Acquired At  : {acquired_at}
+
+
+
+SUMMARY
+
+Processes           : {proc_count}
+Network Connections : {net_count}
+YARA Hits           : {yara_count}
+Run Keys            : {runkeys_count}
+Logon Events        : {logon_count}
+
+
+
+PROCESSES (first {proc_limit})
+
+{proc_table}
+
+
+NETWORK (first {net_limit})
+
+{net_table}
+
+
+YARA (first {yara_limit})
+
+{yara_table}
+
+
+RUN KEYS (first {runkeys_limit})
+
+{runkeys_table}
+
+
+LOGONS (first {logons_limit})
+
+{logons_table}
+
+
+ANALYST NOTES
+
+{analyst_notes}

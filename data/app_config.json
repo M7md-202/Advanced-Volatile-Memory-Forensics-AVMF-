@@ -1,0 +1,36 @@
+{
+  "auth_secret": "CHANGE_ME__PLEASE__07560714f5a58114",
+  "report_format": "technical",
+  "custom_report_template": "",
+  "playbook_filename": "Locky_Ransomware_IR_Playbook_SANS_PICERL.docx",
+  "permissions": {
+    "admin": {
+      "can_view_dashboard": true,
+      "can_view_data_upload": true,
+      "can_view_yara_rules": true,
+      "can_view_reports": true,
+      "can_view_ir_playbook": true,
+      "can_view_settings": true,
+      "can_upload_data": true,
+      "can_edit_yara": true,
+      "can_download_reports": true,
+      "can_download_playbook": true,
+      "can_manage_users": true,
+      "can_edit_reports_format": true
+    },
+    "employee": {
+      "can_view_dashboard": true,
+      "can_view_data_upload": false,
+      "can_view_yara_rules": false,
+      "can_view_reports": true,
+      "can_view_ir_playbook": true,
+      "can_view_settings": false,
+      "can_upload_data": false,
+      "can_edit_yara": false,
+      "can_download_reports": true,
+      "can_download_playbook": true,
+      "can_manage_users": false,
+      "can_edit_reports_format": false
+    }
+  }
+}

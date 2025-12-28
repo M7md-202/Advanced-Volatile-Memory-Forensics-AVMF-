@@ -1,0 +1,55 @@
+Key,Name,Data
+[NONAME]\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\REGISTRY\\MACHINE\\SYSTEM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\REGISTRY\\MACHINE\\HARDWARE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\SystemRoot\\System32\\Config\\SECURITY\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\SystemRoot\\System32\\Config\\SOFTWARE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\SystemRoot\\System32\\Config\\DEFAULT\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\SystemRoot\\System32\\Config\\SAM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\Device\\HarddiskVolume1\\EFI\\Microsoft\\Boot\\BCD\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\WINDOWS\\ServiceProfiles\\NetworkService\\NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\WINDOWS\\ServiceProfiles\\LocalService\\NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\SystemRoot\\System32\\Config\\BBI\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\WINDOWS\\AppCompat\\Programs\\Amcache.hve\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\WINDOWS\\ServiceProfiles\\NetworkService\\AppData\\Local\\Microsoft\\Windows\\DeliveryOptimization\\State\\dosvcState.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\ntuser.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,Delete Cached Update Binary,"C:\\WINDOWS\\system32\\cmd.exe /q /c del /q ""C:\\Users\\administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe"""
+\\??\\C:\\Users\\administrator\\ntuser.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,Delete Cached Standalone Update Binary,"C:\\WINDOWS\\system32\\cmd.exe /q /c del /q ""C:\\Users\\administrator\\AppData\\Local\\Microsoft\\OneDrive\\StandaloneUpdater\\OneDriveSetup.exe"""
+\\??\\C:\\Users\\administrator\\ntuser.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,Uninstall 25.222.1112.0002,"C:\\WINDOWS\\system32\\cmd.exe /q /c rmdir /s /q ""C:\\Users\\administrator\\AppData\\Local\\Microsoft\\OneDrive\\25.222.1112.0002"""
+\\??\\C:\\Users\\administrator\\ntuser.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,Uninstall 25.216.1104.0002_1,"C:\\WINDOWS\\system32\\cmd.exe /q /c rmdir /s /q ""C:\\Users\\administrator\\AppData\\Local\\Microsoft\\OneDrive\\25.216.1104.0002_1"""
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.UI.Xaml.CBS_9.2504.3002.0_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\4fd77213340646d7.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\4fd77213340646d7_COM15.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\4fd77213340646d7.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.CoreAI_1000.26100.7462.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.Photon_1000.26100.10.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.OOBE_1000.26100.28.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.FileExp_1000.26100.4.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.Core_1000.26100.81.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.CBS_1000.26100.275.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.WindowsAppRuntime.CBS.1.6_6000.690.32.100_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.Windows.StartMenuExperienceHost_10.0.26100.4768_neutral_neutral_cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\Settings\\settings.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\Settings\\settings.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\MicrosoftWindows.Client.WebExperience_525.31002.150.0_x64__cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\d19244caf908a0fd.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\SystemAppData\\Helium\\User.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\SystemAppData\\Helium\\UserClasses.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\d19244caf908a0fd_COM15.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\d19244caf908a0fd.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\81d060ca2aba6fa4.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe\\SystemAppData\\Helium\\User.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe\\SystemAppData\\Helium\\UserClasses.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\81d060ca2aba6fa4_COM15.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\81d060ca2aba6fa4.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.WidgetsPlatformRuntime_1.6.14.0_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\Settings\\settings.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.Windows.ShellExperienceHost_10.0.26100.7462_neutral_neutral_cw5n1h2txyewy\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\7c4e86a7f23a4f32.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\SystemAppData\\Helium\\User.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\Users\\administrator\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\SystemAppData\\Helium\\UserClasses.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\7c4e86a7f23a4f32_COM15.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\S-1-5-21-178577525-1380231804-198719023-500\\SystemAppData\\Helium\\Cache\\7c4e86a7f23a4f32.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.WindowsTerminal_1.23.13503.0_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-
+\\??\\C:\\ProgramData\\Microsoft\\Windows\\AppRepository\\Packages\\Microsoft.UI.Xaml.2.8_8.2501.31001.0_x64__8wekyb3d8bbwe\\ActivationStore.dat\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce,-,-

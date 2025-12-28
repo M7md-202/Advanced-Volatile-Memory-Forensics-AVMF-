@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "users": {
+    "Mohamed_Mubarak": {
+      "role": "admin",
+      "salt": "s1",
+      "password_hash": "fd765838557c82a335c96e62d72c085f002de06da06c94731e6029ff5df167e5",
+      "perms": {
+        "view_dashboard": true,
+        "view_reports": true,
+        "download_reports": true,
+        "edit_report_template": true,
+        "view_playbook": true,
+        "download_playbook": true,
+        "manage_playbook": true,
+        "upload_data": true,
+        "view_yara_rules": true,
+        "edit_yara_rules": true,
+        "manage_users": true,
+        "edit_settings": true,
+        "manage_images": true
+      }
+    },
+    "Nora_AlSayegh": {
+      "role": "employee",
+      "salt": "s2",
+      "password_hash": "37d22cd05053548b58b57f4c78d642edea26f13e56c2eca7ca9b1416cf66b292",
+      "perms": {
+        "view_dashboard": true,
+        "view_reports": true,
+        "download_reports": true,
+        "edit_report_template": false,
+        "view_playbook": true,
+        "download_playbook": true,
+        "manage_playbook": false,
+        "upload_data": false,
+        "view_yara_rules": false,
+        "edit_yara_rules": false,
+        "manage_users": false,
+        "edit_settings": false,
+        "manage_images": false
+      }
+    },
+    "Omar_Hasan": {
+      "role": "employee",
+      "salt": "s3",
+      "password_hash": "b12e19c1f17f5c6824a389056b2e245477370103e07eaee1d0807b0038199083",
+      "perms": {
+        "view_dashboard": true,
+        "view_reports": true,
+        "download_reports": true,
+        "edit_report_template": false,
+        "view_playbook": true,
+        "download_playbook": true,
+        "manage_playbook": false,
+        "upload_data": false,
+        "view_yara_rules": false,
+        "edit_yara_rules": false,
+        "manage_users": false,
+        "edit_settings": false,
+        "manage_images": false
+      }
+    },
+    "Moosa": {
+      "role": "admin",
+      "salt": "nuifEomO",
+      "password_hash": "714cf215c710be0fb88e49a4b702dc96a419d1f4ac9943421ff80f5b01f12d8f",
+      "perms": {
+        "view_dashboard": true,
+        "view_reports": true,
+        "download_reports": true,
+        "edit_report_template": true,
+        "view_playbook": true,
+        "download_playbook": true,
+        "manage_playbook": true,
+        "upload_data": true,
+        "view_yara_rules": true,
+        "edit_yara_rules": true,
+        "manage_users": true,
+        "edit_settings": true,
+        "manage_images": true
+      }
+    }
+  }
+}

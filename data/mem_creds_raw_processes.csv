@@ -1,0 +1,3 @@
+PID,PPID,ImageFileName,Offset(V),Threads,Handles,SessionId,Wow64,CreateTime,ExitTime,File output
+5284,5164,powershell.exe,0xe48c01170080,8,-,0,False,2025-12-26 19:12:55.000000 UTC,,Disabled
+3112,5284,cmdkey.exe,0xe48c009e9080,0,-,0,False,2025-12-26 19:12:56.000000 UTC,2025-12-26 19:12:56.000000 UTC,Disabled
