@@ -17,12 +17,71 @@ A Streamlit-based dashboard for volatile memory forensics analysis and incident 
 - python-docx (report export)
 - Miller (mlr) for CSV cleanup (optional)
 
+## Prerequisites
+- Python 3.10+ (recommended)
+- Git
+
 ## Project Structure
 ```text
 .
-├─ app.py / main.py              
-├─ requirements.txt
+├─ forensics_dashboard.py        # Streamlit entry point
+├─ requirements.txt              # Python dependencies (recommended)
 ├─ README.md
-├─ data/                         
-├─ outputs/               
+├─ data/                         # Input CSV artifacts (optional)
+├─ outputs/                      # Generated reports (optional)
 └─ ...
+Run Locally (Windows/PowerShell)
+1) Clone the repo
+powershell
+
+Copy the code
+git clone https://github.com/M7md-202/Advanced-Volatile-Memory-Forensics-AVMF-.git
+cd Advanced-Volatile-Memory-Forensics-AVMF-
+2) Create & activate a virtual environment
+powershell
+
+Copy the code
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+If PowerShell blocks activation:
+
+powershell
+
+Copy the code
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+.\.venv\Scripts\Activate.ps1
+3) Install dependencies
+If you have requirements.txt:
+
+powershell
+
+Copy the code
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+If you don't have requirements.txtyet:
+
+powershell
+
+Copy the code
+python -m pip install --upgrade pip
+pip install streamlit pandas python-docx extra-streamlit-components
+4) Run the app
+powershell
+
+Copy the code
+python -m streamlit run forensics_dashboard.py
+5) (Optional) Generaterequirements.txt
+After installing everything you need:
+
+powershell
+
+Copy the code
+pip freeze > requirements.txt
+Commit and push it:
+
+powershell
+
+Copy the code
+git add requirements.txt
+git commit -m "Add requirements"
+git push
