@@ -272,6 +272,10 @@ git push
 ```
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/b1627661-5721-448b-87c2-9e79911710bc" />
 
+<img width="1875" height="958" alt="image" src="https://github.com/user-attachments/assets/e8207c55-90d1-48ec-8247-1c825ef8e936" />
+<img width="1881" height="948" alt="image" src="https://github.com/user-attachments/assets/88ac2c2b-4b9e-42a2-a6c7-d9bbeca799fd" />
+
+
 
 ### 10) Download the Incident Response (IR) Playbook (DOCX)
 
@@ -288,6 +292,11 @@ pip install python-docx
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/76113f16-afb4-491d-873d-e17650764f41" />
 
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/8d1a7a3c-65a8-4883-9952-fb8d013146d1" />
+
+<img width="1875" height="958" alt="image" src="https://github.com/user-attachments/assets/f83b1d0a-e047-4391-8a9c-00ff410f327a" />
+
+<img width="1870" height="950" alt="image" src="https://github.com/user-attachments/assets/7002049d-28c7-4e9d-b171-173a882bc455" />
+
 
 ### 11) User Management (RBAC) (Admin only)
 
@@ -320,6 +329,7 @@ Go to **YARA Rules**:
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/d8e24f91-6426-4b17-aa73-246e9d2bd886" />
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/0811cc39-25de-41fe-abdc-92944ff7b163" />
 <img width="1874" height="952" alt="image" src="https://github.com/user-attachments/assets/5163b84e-3abb-4a18-b1a3-d48de393c176" />
+
 
 
 
