@@ -185,6 +185,11 @@ python3 /home/kali/volatility3/vol.py -f $MEM -r csv windows.cmdline.CmdLine > /
 
 ### 3) Log in
 Open the AVMF web app and log in using your assigned username and password use either Admin or an Employee account (Permissions will differ). 
+admin : Mohamed_Mubarak
+password : msmubrak_9750
+
+employee: Nora_Alsayigh
+password: 
 <img width="1872" height="955" alt="image" src="https://github.com/user-attachments/assets/e74a33f1-9602-48dc-b3fb-49630e609aa4" />
 
 (Optional) Enable **“Keep me logged in”** for demos/testing.
